@@ -1,0 +1,19 @@
+!pip install torchtext==0.16.2
+!python -m spacy download en_core_web_sm
+import torch
+import torch.nn as nn
+import math
+import torch.nn.functional as F
+import matplotlib.pyplot as plt
+import numpy as np
+from torchviz import make_dot
+from graphviz import Digraph
+import torch.optim as optim
+import torchtext
+import spacy
+from matplotlib.colors import ListedColormap
+
+
+# Ignore warnings
+import warnings
+warnings.filterwarnings('ignore')
